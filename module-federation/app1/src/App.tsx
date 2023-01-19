@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 // eslint-disable-next-line import/no-unresolved
 import Module1 from 'module1/Root';
@@ -21,11 +21,13 @@ export default function App() {
 
   return (
     <>
-      <Text>App 1</Text>
-      <React.Suspense fallback={<Text>Loading module1...</Text>}>
-        <Module1 />
-      </React.Suspense>
-      <Text>{fooText}</Text>
+      <View style={{ backgroundColor: 'skyblue', padding: 10, margin: 8 }}>
+        <Text>App 1</Text>
+        <React.Suspense fallback={<Text>Loading module1...</Text>}>
+          <Module1 />
+        </React.Suspense>
+        <Text>{fooText}</Text>
+      </View>
     </>
   );
 }
