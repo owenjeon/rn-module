@@ -9,7 +9,7 @@
     "android": "react-native run-android --no-packager",
     "ios": "react-native run-ios --no-packager",
     "pod_install": "cd ./ios && pod install",
-    "start": "react-native webpack-start --port 9000",
+    "start": "react-native webpack-start --port 9000 --host \"0.0.0.0\"",
     "start:standalone": "STANDALONE=1 react-native webpack-start --port 8081"
   },
   "dependencies": {
