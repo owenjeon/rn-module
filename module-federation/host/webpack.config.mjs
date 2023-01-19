@@ -259,6 +259,26 @@ export default (env) => {
             ...Repack.Federated.SHARED_REACT_NATIVE,
             requiredVersion: '0.68.2',
           },
+          '@react-navigation/native-stack': {
+            requiredVersion: '6.9.8',
+            eager: true,
+            singleton: true,
+          },
+          '@react-navigation/native': {
+            requiredVersion: '6.1.2',
+            eager: true,
+            singleton: true,
+          },
+          'react-native-screens': {
+            requiredVersion: '3.19.0',
+            eager: true,
+            singleton: true,
+          },
+          'react-native-safe-area-context': {
+            requiredVersion: '4.5.0',
+            eager: true,
+            singleton: true,
+          },
         },
       }),
     ],
