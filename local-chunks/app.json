@@ -1,5 +1,0 @@
-{
-  "name": "LocalChunksExample",
-  "displayName": "LocalChunksExample",
-  "localChunks": ["async_body"]
-}
